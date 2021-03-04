@@ -17,6 +17,7 @@ phases:
 artifacts:
   files:
     - build/*
+    - appspec.yml
     # - dist/**/*
     # - request-map.js
     # - credentials.json
