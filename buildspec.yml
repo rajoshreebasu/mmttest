@@ -18,7 +18,7 @@ artifacts:
   files:
     - build/*
     - appspec.yml
-    # - dist/**/*
+    - scripts/*
     # - request-map.js
     # - credentials.json
     # - node_modules/**/*
