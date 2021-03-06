@@ -1,0 +1,20 @@
+# set the base image to node version 14.15.1
+# get image from docke hub
+FROM node:14.15.1
+
+# create a env variable NODE_ENV = DEV
+ENV NODE_ENV=DEV
+
+# set current working directoty to /app
+WORKDIR /app
+
+# copy package.jason from projet folder to /app
+COPY "package.json" /app
+
+# copy all from current location to /app
+COPY . /app
+
+# run the command npm start
+# suntax is CMD ['command', 'parameter to commmand']
+CMD ["npm", "start"]
+
